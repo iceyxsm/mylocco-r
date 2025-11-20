@@ -1,0 +1,17 @@
+{
+  "short_name": "mylocco",
+  "name": "mylocco - Business Directory",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#c71f37",
+  "background_color": "#ffffff"
+}
+
+

@@ -1,0 +1,506 @@
+/* Admin Dashboard Styles */
+
+.user-dashboard {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.user-dashboard-box {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.dashHeader {
+  background-color: var(--bs-body-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.dashCaption {
+  background-color: var(--bs-body-bg);
+}
+
+/* Dashboard Stats Cards */
+.card.position-relative .w-25 {
+  width: 25%;
+}
+
+.card.position-relative .w-30 {
+  width: 30%;
+}
+
+.card.position-relative .ht-80 {
+  height: 80%;
+}
+
+.ctr {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Dashboard List Group */
+.dashboardListgroup {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboardListgroup li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.dashboardListgroup li:last-child {
+  border-bottom: none;
+}
+
+.dashboardListgroup .icons {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+}
+
+.dashboardListgroup .listCaps {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.dashboardListgroup .listing-link {
+  color: var(--bs-primary);
+  text-decoration: none;
+}
+
+.dashboardListgroup .listing-link:hover {
+  text-decoration: underline;
+}
+
+.dashboardListgroup .ratting {
+  padding: 2px 8px;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.dashboardListgroup .ratting.high {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.dashboardListgroup .ratting.mid {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.dashboardListgroup .ratting.low {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Messages */
+.messagesWrapers {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.singleMessagesline {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.singleMessagesline:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.msgLinethumb {
+  flex-shrink: 0;
+}
+
+.msgLinecaption {
+  min-width: 0;
+}
+
+.msglineTitle {
+  margin-bottom: 0.25rem;
+}
+
+.msglineParag p {
+  color: var(--bs-muted);
+}
+
+/* Booking Styles */
+.bookingActivities {
+  width: 100%;
+}
+
+.bookingAvatar {
+  flex-shrink: 0;
+}
+
+.bookingInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.bookingTitle {
+  margin-bottom: 1rem;
+}
+
+.titlesName {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.Bookscats {
+  font-size: 0.875rem;
+  color: var(--bs-muted);
+  margin-left: 0.5rem;
+}
+
+.bookingDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.singledetailInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.listTitle {
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.bookingAction {
+  margin-top: 1rem;
+}
+
+.badge.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.badge.unpaid {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.badge.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge.cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Listings Management Styles */
+.mngListings {
+  width: 100%;
+}
+
+.mngListinfirst {
+  flex: 1;
+  min-width: 0;
+}
+
+.mngListings-thumb {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.mngListings-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mngListings-caps {
+  flex: 1;
+  min-width: 0;
+}
+
+.mnglstTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.mngListinlast {
+  flex-shrink: 0;
+}
+
+/* Messages Styles */
+.singleMessageswrap {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.singleMessageswrap:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.singleMessages {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.messagesAvatar {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.userStatus {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.userStatus.online {
+  background-color: #28a745;
+}
+
+.userStatus.busy {
+  background-color: #dc3545;
+}
+
+.userStatus.offline {
+  background-color: #6c757d;
+}
+
+.messagesInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.messageuserTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.unread {
+  font-size: 0.75rem;
+  color: var(--bs-primary);
+  font-weight: 600;
+}
+
+.messagesBody p {
+  color: var(--bs-muted);
+  font-size: 0.875rem;
+}
+
+/* Reviews Styles */
+.singleReviewswrap {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.singleReviewswrap:last-child {
+  border-bottom: none;
+}
+
+.singlereviews {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.reviewerAvatar {
+  flex-shrink: 0;
+}
+
+.reviewsInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.reviewrHeadline {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.postedDate {
+  color: var(--bs-muted);
+  font-size: 0.875rem;
+}
+
+.reviewsStar {
+  color: #ffc107;
+}
+
+.reviewDescription {
+  color: var(--bs-muted);
+  line-height: 1.6;
+}
+
+.reviewreply {
+  margin-top: 1rem;
+}
+
+/* Chat Modal Styles */
+.chatboxWraper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.chatboxHeader {
+  position: relative;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+  color: white;
+}
+
+.chatboxHeader .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.chatAvatar {
+  margin-bottom: 1rem;
+}
+
+.chatterTitle {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.chatboxbody {
+  background: white;
+  padding: 1.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.chatfooter {
+  background: white;
+  padding: 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chatAdder {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sendmessage {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sendmessage input {
+  flex: 1;
+}
+
+/* Hide scrollbar on desktop */
+@media (min-width: 992px) {
+  .user-dashboard-inner {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .user-dashboard-inner::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  .user-dashboard-box {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .user-dashboard-box::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Prevent body scroll on admin pages */
+  body.admin-page {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  html.admin-page {
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+/* Hide scrollbar for messages wrapper on desktop */
+@media (min-width: 992px) {
+  .messagesWrapers {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .messagesWrapers::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Hide scrollbar for chatbox on desktop */
+  .chatboxbody {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .chatboxbody::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .user-dashboard-inner {
+    display: none !important;
+  }
+}
+

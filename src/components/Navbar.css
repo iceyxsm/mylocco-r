@@ -1,0 +1,62 @@
+/* Ensure overlay panel shows when menu is open */
+.nav-overlay-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  backdrop-filter: blur(2px);
+}
+
+/* Ensure nav menu appears above overlay */
+.nav-menus-wrapper {
+  position: relative;
+  z-index: 1000;
+}
+
+@media (max-width: 991px) {
+  .nav-menus-wrapper {
+    z-index: 1001;
+  }
+}
+
+/* Move signup popup down */
+#signup .modal-dialog {
+  margin-top: 2vh;
+}
+
+/* Verification Modal Styles */
+#verificationModal .modal-dialog {
+  max-width: 500px;
+}
+
+#verificationModal .bi-envelope-check {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Password visibility toggle button */
+.form-group.position-relative .btn-link {
+  color: #6c757d;
+  padding: 0;
+  text-decoration: none;
+}
+
+.form-group.position-relative .btn-link:hover {
+  color: #495057;
+}
+
+.form-group.position-relative .btn-link:focus {
+  box-shadow: none;
+  outline: none;
+}
